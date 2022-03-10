@@ -1,0 +1,440 @@
+/*General Stylings*/
+
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+    overflow-x:hidden;
+    
+}
+body {
+    
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(192,192,192, .7);
+}
+
+h1 {
+    margin:0;
+    font-family: Vidaloka, serif;
+    font-size: 5rem;
+    z-index: 2;
+    padding-left: 15px;
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: Vidaloka, serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: Vidaloka, serif;
+    font-weight: bold;
+    margin: 0;
+    margin-top: -.5em;
+    font-size: 1.5rem;
+    padding-left: 15px;
+    color: rgba(192,192,192, .7);
+    z-index: 2;
+
+}
+
+
+
+hr {
+    width: 10%;
+    background-color: #049ab1;
+    height: 2px;
+}
+
+.bold {
+    font-weight: bold;
+}
+/*Nav Bar*/
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color:#2f274a;
+    border-bottom: 1px solid rgba(255, 255, 255, .7);
+}
+
+@media only screen and (max-width: 655px){
+    nav{
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+nav ul {
+    padding-right: 2em;
+}
+
+@media only screen and (max-width: 655px){
+    nav ul{
+        width: 100%;
+        padding: 0;
+    }
+}
+
+nav ul li {
+    list-style: none;
+    text-align: center;
+    display: inline;
+}
+
+nav ul li:not(:last-child) {
+    margin-right: 4em;
+}
+
+@media only screen and (max-width: 655px){
+    nav ul li:not(:last-child) {
+        margin-right: 4px;
+    }
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    font-family: Lato, sans-serif;
+    text-decoration: none;
+    color: rgba(192,192,192, .7);
+}
+
+nav ul li a:hover {
+    border-bottom: 3px solid #049ab1;
+    color: white;
+}
+
+/*About Section*/
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 62px;
+    min-height: 90vh;
+    min-width: 100%;
+    background: linear-gradient(212deg, #2f274a, #6f1051, #049ab1);
+    background-size: 600% 600%;
+    animation: change 18s ease infinite;
+}
+
+@keyframes change {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+
+@media only screen and (max-width: 655px){
+    .main-container{
+        flex-direction: column;
+    }
+}
+
+.main-container figure {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media only screen and (max-width: 655px){
+    .main-container figure{
+        margin: 0;
+        padding-top: 3em;
+        padding-left: 4.5em;
+        max-width: 100%;
+        justify-content: center;
+    }
+}
+
+.kphoto {
+    max-height: 300px;
+    max-width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+}
+
+
+@media only screen and (max-width: 655px){
+    .main-container .kphoto{
+        max-height: 300px;
+        max-width: 300px;
+    }}
+
+.fa-computer-mouse {
+    position: relative;
+    right: 300px;
+    top: 210px;
+    padding: 2px;
+    color:hotpink;
+    transition: .5s ease;
+}
+
+.toggle {
+    opacity :0;
+}
+
+@media only screen and (max-width: 655px){
+    .fa-computer-mouse{
+        position: relative;
+        top: 1em;
+        right: .5em;
+    }}
+
+
+.fa-computer-mouse:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 1rem black);
+}
+
+.intro {
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 30%;
+    min-height: auto;
+    background-color: rgba(0, 0, 0, .3);
+    color: rgba(255, 255, 255, .9);
+    border-radius: 5%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+    padding: 1.5em;
+    margin: 0;
+}
+
+@media only screen and (max-width: 655px){
+    .intro {
+        max-width: 70%;
+        margin-top: 4em;
+        margin-bottom: 4em;
+        justify-content: center;
+        align-items: center;
+    }}  
+
+.intro p{
+    width: 70%;
+    font-family: Lato, sans-serif;
+    text-align: left;
+    margin-top: 1px;
+    padding-left: 15px;
+    color: white;
+    z-index: 2;
+}
+
+    @media only screen and (max-width: 655px){
+        .intro p, .intro h1, .intro h3 {
+            padding: 0;
+            text-align: center;
+        }}
+
+/*Portfolio Section*/
+    
+.section2 {
+    margin-top:1em;
+    margin-bottom: 1em;
+    min-height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+#portfolio {
+    border-top: 2px solid rgba(255, 255, 255, .7);
+    width: 100%;
+    height: auto;
+}
+
+.project-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    min-width: 30%;
+    height: auto;
+    font-family: Lato, sans-serif;
+    font-weight: bold;
+    color: black;
+    margin: 1vh 0 1vh 0;
+
+} 
+
+.project-container img {
+    max-width: 400px;
+    max-height: 235px;
+    opacity: 1;
+    transition: .5s ease;
+
+}
+
+.project-container img:hover {
+    opacity: .5;
+    transform: scale(1.1);
+    box-shadow: 0 0px 10px 3px rgba(111,16,81, 1);
+}
+@media only screen and (max-width: 655px){
+    .project-container img {
+        width: 100%;
+        height: 100%;
+    }}
+
+
+@media only screen and (max-width: 655px){
+    .intro p, .intro h1, .intro h3 {
+        padding: 0;
+        text-align: center;
+    }}
+
+
+.seemore {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    width: 100%;
+    
+}
+
+@media only screen and (max-width: 655px){
+    .seemore{
+        padding-top: 2em;
+        padding-bottom: 1.5em;
+    }}
+
+.seemore a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgba(0,0,0, .65);
+    margin-bottom: 10px;
+}
+
+.seemore a:hover {
+    color: #049ab1;
+}
+
+
+/*Coding Skills*/
+
+#skills {
+    background-color: rgba(148, 148, 148, .58);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(255, 255, 255, .7);
+    border-top: 1px solid rgba(255, 255, 255, .7);
+}
+
+#skills h2 {
+    padding-top: 3vh;
+}
+
+.section3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    min-height: 40vh;
+    justify-content: center;
+    align-items: center;
+      
+}
+
+.icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em;
+    font-family: Lato, sans-serif;
+    text-align: center;
+    
+}
+
+.icon-box p {
+    margin-bottom:0;}
+
+
+/*Icons*/
+
+.fa-js-square {
+    color: #F0DB4F;
+    
+}
+
+.fa-html5 {
+    color: #e34c26;
+
+}
+
+.fa-css3-alt {
+    color:  #264de4;
+}
+
+.fa-github-square {
+    color: #171515;
+}
+
+.fa-git-square {
+    color: #F1502F;
+}
+
+.icon-box .fa-brands {
+      transform-origin: center;
+      transition: transform 1.5s;
+  }
+
+.icon-box .fa-brands:hover {
+    transform: rotate(360deg);
+}
+
+/*Contact/Footer Section*/
+
+#contact {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4vh;
+    
+}
+footer h3 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    color: black;
+    font-size: 1.5rem;
+    text-align: center
+}
+footer p {
+    text-align: center;
+    color: black;
+    font-family: Lato, sans-serif;
+}
+footer .fa-brands {
+    margin: .25em;
+}
+
+footer hr {
+    margin-bottom: 7vh;
+}
