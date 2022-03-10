@@ -21,3 +21,6 @@ This was my first time incorporating JavaScript into a page - I was pretty excit
 more about how to streamline the code. I was having issues creating multiple Event Listeners on the pink mouse icon, so I 
 ended up creating to separate icons (alternating their opacity so that only one appears on the screen at any given time).
 
+
+
+see page here --> https://kmlibin.github.io/Personal-Portfolio-Project/
