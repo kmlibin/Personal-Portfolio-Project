@@ -25,6 +25,10 @@ h1 {
     font-size: 5rem;
     z-index: 2;
     padding-left: 15px;
+    margin-block-start :0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
 }
 
 h2 {
@@ -247,6 +251,11 @@ nav ul li a:hover {
             padding: 0;
             text-align: center;
         }}
+
+
+.display1, .display2 {
+    width: 100%;
+}
 
 /*Portfolio Section*/
     

@@ -41,7 +41,7 @@ function mainChange() {
   textDisplay1.style.display = "none";
   textDisplay2.style.display = "none";
   textDisplay3.style.display = "none";
-  text.style.width = "70%";
+  text.style.width = "500px";
   text.style.minHeight = "300px";
   text.style.backgroundColor = "transparent";
   text.style.boxShadow = "none";
