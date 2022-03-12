@@ -37,19 +37,18 @@ function mainChange() {
   mainColor.style.animation = " change 10s ease infinite";
   image.src= "resources/images/squarenose.jpg";
   image.style.maxWidth = "100%";
-  text.style.backgroundImage = "url('resources/images/thisvar.png')";
+  text.style.backgroundImage = "url('resources/images/thisvar.jpg')";
   textDisplay1.style.opacity = "0";
   textDisplay2.style.opacity = "0";
   textDisplay3.style.opacity = "0";
-  text.style.width = "90%";
-  text.style.minHeight = "90%";
+  text.style.width = "100%";
+  text.style.minHeight = "350px";
   text.style.backgroundColor = "transparent";
   text.style.boxShadow = "none";
   navColor.style.backgroundColor = "black";
   toggle.style.opacity = "1";
   normal.style.display = "none";
   figure.style.paddingRight = "2.35em";
-  
 
 }
 
