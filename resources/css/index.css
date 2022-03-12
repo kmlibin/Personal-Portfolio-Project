@@ -25,7 +25,7 @@ h1 {
     font-family: Vidaloka, serif;
     font-size: 5rem;
     z-index: 2;
-    padding-left: 15px;
+
     margin-block-start :0;
     margin-block-end: 0;
     margin-inline-start: 0;
@@ -45,7 +45,7 @@ h3 {
     margin: 0;
     margin-top: -.5em;
     font-size: 1.5rem;
-    padding-left: 15px;
+   
     color: rgba(192,192,192, .7);
     z-index: 2;
 
@@ -217,7 +217,7 @@ nav ul li a:hover {
     background-size: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     max-width: 30%;
     min-height: auto;
     background-color: rgba(0, 0, 0, .3);
@@ -226,6 +226,7 @@ nav ul li a:hover {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
     padding: 1.5em;
     margin: 0;
+    
 }
 
 @media only screen and (max-width: 655px){
@@ -238,15 +239,12 @@ nav ul li a:hover {
     }}  
 
 .intro p{
-    width: 70%;
     font-family: Lato, sans-serif;
     text-align: left;
     margin-top: 1px;
-    padding-left: 15px;
     color: white;
     z-index: 2;
 }
-
     @media only screen and (max-width: 655px){
         .intro p, .intro h1, .intro h3 {
             padding: 0;
@@ -254,8 +252,9 @@ nav ul li a:hover {
         }}
 
 
-
-
+.display1, .display2{
+    width: 100%;
+}
 /*Portfolio Section*/
     
 .section2 {
