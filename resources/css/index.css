@@ -21,6 +21,7 @@ body {
 
 h1 {
     margin:0;
+    width: 100%;
     font-family: Vidaloka, serif;
     font-size: 5rem;
     z-index: 2;
@@ -253,9 +254,7 @@ nav ul li a:hover {
         }}
 
 
-.display1, .display2 {
-    width: 100%;
-}
+
 
 /*Portfolio Section*/
     
