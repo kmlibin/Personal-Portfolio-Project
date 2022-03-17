@@ -1,4 +1,4 @@
-# Personal Portfolio Project#
+# Personal Portfolio Project
 
 ### This Codecademy project was designed to bring together CSS,  HTML, and Vanilla Javascript into one page. The design and content were entirely up to me, but the requirements included:
 
